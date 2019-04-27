@@ -1,0 +1,134 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1590303046987486}
+  m_IsPrefabParent: 1
+--- !u!1 &1590303046987486
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4585740270560656}
+  - component: {fileID: 114296980422417852}
+  - component: {fileID: 114930564106843646}
+  - component: {fileID: 114848043269856200}
+  m_Layer: 0
+  m_Name: Audio Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1823871784702450
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4998428509623710}
+  m_Layer: 0
+  m_Name: AudioListener
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4585740270560656
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1590303046987486}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4998428509623710}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4998428509623710
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1823871784702450}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4585740270560656}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114296980422417852
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1590303046987486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: accb0bfce5e8aea4ea1d36b36f98294a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musicSources: []
+--- !u!114 &114848043269856200
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1590303046987486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b33bb5365a2f68b499c932328c80e41e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundGroups:
+  - groupID: EnemyDeath
+    group:
+    - {fileID: 8300000, guid: 8a611344592654540992fff3dc5efe8c, type: 3}
+    - {fileID: 8300000, guid: aaec830dd8e167d4c92c9c2967ba2a13, type: 3}
+    - {fileID: 8300000, guid: c3285cb151059aa45b96474c35d4e7be, type: 3}
+  - groupID: PlayerWalk
+    group:
+    - {fileID: 8300000, guid: a11001ef9fa47a84495f64c5c1e22f3c, type: 3}
+    - {fileID: 8300000, guid: 4a19fbd10f30da641bfe0f7d8449ac61, type: 3}
+  - groupID: BlockBroken
+    group:
+    - {fileID: 8300000, guid: 51e2d19ffa1a3b34a943f950033b63ae, type: 3}
+    - {fileID: 8300000, guid: ce74eb00eabf49b42bf1a420be593763, type: 3}
+  - groupID: Reload
+    group:
+    - {fileID: 8300000, guid: 2ec525fa5e568b947a828af420fddd34, type: 3}
+  - groupID: ButtonSelect
+    group:
+    - {fileID: 8300000, guid: 653da3f264c0b6d46948846e173c9710, type: 3}
+    - {fileID: 8300000, guid: 927be884c98183e45b9324f758aab1ad, type: 3}
+    - {fileID: 8300000, guid: 9b94dd8df4674ae42a59f17c7de536fb, type: 3}
+  - groupID: EnemyLocate
+    group:
+    - {fileID: 8300000, guid: 7bf7efb440f6dca4bae790ef437ccd3c, type: 3}
+    - {fileID: 8300000, guid: 3f99bfcac2f42a94da8d6904b293e98d, type: 3}
+--- !u!114 &114930564106843646
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1590303046987486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1290b155eb89534ca663a84c4844c00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainTheme: {fileID: 8300000, guid: 47cf73de08e26464e984173bc489e11d, type: 3}
